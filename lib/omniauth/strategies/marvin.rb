@@ -7,7 +7,8 @@ module OmniAuth
 
       option :client_options, {
         site: 'https://api.intra.42.fr',
-        authorize_url: 'v2/oauth/authorize'
+        authorize_url: 'v2/oauth/authorize',
+        authorize_params: {scope: 'projects'}
       }
 
       option :pkce, true
